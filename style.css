@@ -1,0 +1,30 @@
+#right-side-nav #usaFlag {
+  height: 1.5vh;
+  width: auto;
+}
+
+#right-side-nav #useIcon {
+  height: 2vh;
+  width: auto;
+  margin-right: 10px;
+}
+
+.bookNowBtn {
+  background-color: #FF6C2D;
+  border: none;
+}
+
+.lorem {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.links ul .link-item {
+  font-size: 12px;
+}
+
+.adBackgroundImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

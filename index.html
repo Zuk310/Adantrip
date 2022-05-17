@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Adantrip</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <h3 class="text-white text-start">Adantrip</h3>
+            </a>
+            <button class="navbar-toggler text-muted" type="button">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse align-items-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-muted" href="">Hotels</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-muted" href="">Rooms</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-muted" href="">Flights</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-muted" href="">Cars</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-muted" href="">Experiences</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse align-items-center justify-content-end" id="right-side-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-muted" href="">USD</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href=""><img src="./assets/images/united-states.png" alt="usaFlag"
+                                id="usaFlag"></a>
+                    </li>
+                    <li class="nav-item mx-2 d-flex align-content-center">
+                        <i class="fas fa-user-circle text-muted d-flex align-self-center"></i>
+                        <a class="nav-link text-muted" href="">My account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END Navbar -->
+
+
+    <!-- Main-Section -->
+
+
+
+
+
+
+    <!-- Right Section -->
+    <main class="main d-flex">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-12 text-md-start bg-white" id="mainInfo">
+                    <div class="flightInfo d-flex justify-content-lg-between">
+                        <div class="flightInfoText col-xl-4 col-12 text-start">
+                            <p class="flightLocation mb-3">
+                                <h1 class="h3">Buenos Aires > Ile de France</h1>
+                            </p>
+                            <p class="passangerInfo mb-3">
+                                <h2 class="h6">Round Trip, Economy, 1 passenger</h2>
+                            </p>
+                            <div class="departureInfo">
+                                <h2 class="h6">Depart: Aug 15, 2019</h2>
+                            </div>
+                            <div class="arrivalInfo mb-3">
+                                <h2 class="h6">Return: Aug 16, 2019</h2>
+                            </div>
+                            <p class="arrivalInfo mb-3"><a href="">FLIGHT DETAILD ></a> </p>
+                        </div>
+                        <div class="companyLogo text-center align-self-center d-none d-lg-block">
+                            <img src="./assets/images/iberia.svg" alt="company logo" class="h-50 w-50">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <!-- Passenger Details -->
+                    <div class="passengerDetails">
+                        <p class="passengerFlightLocation">
+                            <h1 class="h3">Enter Passenger Details</h1>
+                        </p>
+                        <p class="passangerInfo">
+                            <h2 class="h6">Passenger 1</h2>
+                        </p>
+                        <form class="passengerDetails">
+                            <div class="row mb-0 mb-lg-3">
+                                <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                                    <select name="month" class="form-control">
+                                        <option value='' disabled selected>month</option>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-lg mb-3 mb-lg-0">
+                                    <select name="day" class="form-control">
+                                        <option value='' disabled selected>day</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-lg mb-3 mb-lg-0">
+                                    <select name="year" class="form-control">
+                                        <option value='' disabled selected>year</option>
+                                        <option value="1940">1940</option>
+                                        <option value="1941">1941</option>
+                                        <option value="1942">1942</option>
+                                        <option value="1943">1943</option>
+                                        <option value="1944">1944</option>
+                                        <option value="1945">1945</option>
+                                        <option value="1946">1946</option>
+                                        <option value="1947">1947</option>
+                                        <option value="1948">1948</option>
+                                        <option value="1949">1949</option>
+                                        <option value="1950">1950</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1999">1999</option>
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <select name="gender" class="form-control">
+                                        <option value='' disabled selected>Gender</option>
+                                        <option value="01">Male</option>
+                                        <option value="02">Female</option>
+                                        <option value="03">Attack helicopter</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-0 mb-lg-3">
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="row mb-0 mb-lg-3">
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <input type="text" class="form-control" placeholder="Passport Serial">
+                                </div>
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <select name="citzen" class="form-control">
+                                        <option value='' disabled selected>Citzenship</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                    <!-- END Passenger Details -->
+
+
+
+                    <!-- Billing details -->
+                    <p class="billingSection">
+                        <h1 class="h3">Enter Billing Information</h1>
+                    </p>
+                    <p class="billingInfo">
+                        <h6>Billing Address</h6>
+                    </p>
+                    <form>
+                        <div class="row mb-0 mb-lg-3">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="Street (line 1)">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="Street (line 2)">
+                            </div>
+                        </div>
+                        <div class="row mb-0 mb-lg-3">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="Postal Code">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                        </div>
+                        <div class="row mb-0 mb-lg-3">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <select name="state" class="form-control">
+                                    <option value='' disabled selected>State/Region</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <select name="country" class="form-control">
+                                    <option value='' disabled selected>Select Country</option>
+                                    <option value="1940">1940</option>
+                                    <option value="1941">1941</option>
+                                    <option value="1942">1942</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Card Details -->
+                    <div class="cardInfo">
+                        <p class="creditCard">
+                            <h6>Card Details</h6>
+                        </p>
+                    </div>
+                    <form>
+                        <div class="row mb-0 mb-lg-3">
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="Name on Card">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <input type="text" class="form-control" placeholder="Credit/Debit Card Number">
+                            </div>
+                        </div>
+                        <div class="row mb-0 mb-lg-3">
+                            <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                                <select id="cardMonth" name="cardMonth" class="form-control">
+                                    <option value='' disabled selected>(1) Jan</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                                <select name="cardYear" class="form-control">
+                                    <option value='' disabled selected>2018</option>
+                                    <option value="1940">1940</option>
+                                    <option value="1941">1941</option>
+                                    <option value="1942">1942</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                                <input type="text" placeholder="Security Code" class="form-control">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3 mb-lg-0 d-flex justify-content-evenly">
+                                <!-- תמונות נמעכות -->
+                                <a href="" class="col-1 d-flex align-items-center"><img
+                                        src="./assets/images/mastercard.png" alt="" class="img-fluid"></a>
+                                <a href="" class="col-1 d-flex align-items-center"><img src="./assets/images/Visa.png"
+                                        alt="" class="img-fluid"></a>
+                                <a href="" class="col-1 d-flex align-items-center"><img
+                                        src="./assets/images/Visa-electronic.png" alt="" class="img-fluid"></a>
+                                <a href="" class="col-1 d-flex align-items-center"><img
+                                        src="./assets/images/discover new.png" alt="" class="img-fluid"></a>
+                                <a href="" class="col-1 d-flex align-items-center"><img
+                                        src="./assets/images/maestro.png" alt="" class="img-fluid"></a>
+                                <a href="" class="col-1 d-flex align-items-center"><img src="./assets/images/AE.png"
+                                        alt="" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <!-- END Card Details -->
+                    <!-- END Billing Details -->
+
+
+
+
+                    <!-- Book Now Section -->
+                    <div class="total d-flex col-12 flex-wrap justify-content-between bookNow">
+                        <p class="billing">
+                            <h3 class="col-12">Total</h3>
+                        </p>
+                        <p class="billing">
+                            <h6 class="text-muted col-lg-8 col-12">By clicking book now button you agree with terms and
+                                conditionals and money back gurantee. Thank you for trusting our service</h6>
+                        </p>
+                        <P class="totalSum">
+                            <h3 class="col-lg-2 col-12">$1907.68</h3>
+                        </P>
+                        <button class="col-12 bookNowBtn">
+                            <h4 class="text-center pt-3 pb-2 text-white">BOOK NOW</h4>
+                        </button>
+                    </div>
+                    <!-- END Book Now Section -->
+
+
+                </div>
+                <!-- END Right Section -->
+
+
+
+
+
+
+                <!-- Left Section -->
+                <div class="col-xl-4 col-12 text-md-start mt-3" id="secondaryInfo">
+                    <div class="bookingSummary border col-12 px-3">
+                        <p class="bookingSummary">
+                            <h5>Booking Summary</h5>
+                        </p>
+                        <p class="tripSummary">
+                            <h6>Round Trip, Economy, 1 passanger</h6>
+                        </p>
+                        <p class="departSummary">
+                            <h6>Depart: Aug 15, 2019</h6>
+                        </p>
+                        <p class="returnSummary">
+                            <h6>Return: Aug 16, 2019</h6>
+                        </p>
+                    </div>
+                    <div class="charges border col-12 d-flex flex-wrap my-3 p-3">
+                        <p class="chargesTitle">
+                            <h5 class="col-12">Charges</h5>
+                        </p>
+                        <p class="chargesPassangers">
+                            <h6 class="col-12">1 passanger</h6>
+                        </p>
+                        <p class="chargesEconomy">
+                            <h6 class="col-6">Economy</h6>
+                        </p>
+                        <p class="chargesSum">
+                            <h5 class="col-6 text-end ">$1907.68</h5>
+                        </p>
+
+                        <p class="chargesTotal">
+                            <h6 class="col-6">Total</h6>
+                        </p>
+                        <p class="chargesSumTotal">
+                            <h5 class="col-6 text-end">$1907.68</h5>
+                        </p>
+                    </div>
+                    <div class="moreInfo border col-12 d-flex flex-wrap p-3">
+                        <div class="firstPart col-12 d-flex flex-wrap">
+                            <i class="fas fa-check col-1 d-flex justify-content-center pt-4"></i>
+                            <div class="firstPartText col-11">
+                                <p class="chargesTitle">
+                                    <h5 class="col-10">Manage you bookings!</h5>
+                                </p>
+                                <p class="firstPartSubText">
+                                    <h6 class="col-12">You're in control of your booking - no registration required.
+                                    </h6>
+                                </p>
+                            </div>
+
+                            <div class="secondPart col-12 d-flex flex-wrap"></div>
+                            <i class="fas fa-check col-1 d-flex justify-content-center pt-4"></i>
+                            <div class="secondPartText col-11">
+                                <p class="chargesTitle">
+                                    <h5 class="col-10">Customer support available 24/7 worldwide!</h5>
+                                </p>
+                                <p class="secondPartTextSubText">
+                                    <h6 class="col-12">Website and customer support in English and 41 other languages.
+                                    </h6>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+    <!-- ENDLeft Section -->
+    <!-- END Main-Section -->
+
+
+    <!-- Links Section -->
+    <section class="d-flex col-12 flex-wrap bg-light border-top mt-5">
+        <div class="aboutAdantrip col-lg-4 col-12 d-flex justify-content-center">
+            <div class="websiteText col-12 text-start w-75 text-center text-lg-start">
+                <p class="linksLogo col-12">
+                    <h1 class="text-muted">Adantrip</h1>
+                </p>
+                <p class="aboutAdantripFirstText col-12">
+                    <h6 class="text-muted lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                        laboriosam placeat sint maxime natus? Provident, sunt quae odio consectetur cumque.</h6>
+                </p>
+                <p class="aboutAdantripSecondText col-12">
+                    <h6 class="text-muted lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                        laboriosam placeat sint maxime natus? Provident, sunt quae odio consectetur cumque.</h6>
+                </p>
+            </div>
+        </div>
+        <div class="linksSections col-lg-4 col-12 d-flex flex-wrap text-center pt-2">
+            <ul class="travelMateLinksSection list-unstyled col-lg-4 col-12">
+                <li class="m-4"><b>Travel Mate</b></li>
+                <li class="link-item text-muted">About Travel Mate</li>
+                <li class="link-item text-muted">Mobile App</li>
+                <li class="link-item text-muted">Customer Support</li>
+                <li class="link-item text-muted">Advetising</li>
+                <li class="link-item text-muted">Jobs</li>
+                <li class="link-item text-muted">Privacy Policy</li>
+                <li class="link-item text-muted">Termsd of Use</li>
+            </ul>
+
+            <ul class="exploreLinksSection list-unstyled col-lg-4 col-12 mt-2">
+                <li class="m-3"><b>Explore</b></li>
+                <li class="link-item text-muted">Countries</li>
+                <li class="link-item text-muted">Regions</li>
+                <li class="link-item text-muted">Cities</li>
+                <li class="link-item text-muted">Districs</li>
+                <li class="link-item text-muted">Airports</li>
+                <li class="link-item text-muted">Hotels</li>
+                <li class="link-item text-muted">Place of Interest</li>
+            </ul>
+
+            <ul class="bookLinksSection list-unstyled col-lg-4 col-12 mt-2">
+                <li class="m-3"><b>Book</b></li>
+                <li class="link-item text-muted">Apartments</li>
+                <li class="link-item text-muted">Resorts</li>
+                <li class="link-item text-muted">Villas</li>
+                <li class="link-item text-muted">Hostels</li>
+                <li class="link-item text-muted">B&Bs</li>
+                <li class="link-item text-muted">Guesthouses</li>
+                <li class="link-item text-muted">hotel Chains</li>
+            </ul>
+
+        </div>
+        <div class="adsSection col-lg-4 col-12 d-flex justify-content-center">
+            <div class="adBackgroundImage d-flex col-12 col-lg-10 justify-content-center py-5 shadow"
+                style="background-image:url('./assets/images/ads.png')">
+                <div class="row d-flex justify-content-center">
+                    <div class="adSaveText text-center text-white col-12">
+                        <b class="h5">Save up to 50% off your next trip</b>
+                    </div>
+                    <div class="adSubText text-white text-center col-12 pt-3">
+                        <h6 class="h6">Subscribe to unlock secret deals</h6>
+                    </div>
+                    <div class="adInputEmail col-10 d-flex justify-content-center rounded">
+                        <input type="text" class="py-2 col-12" placeholder="Type your e-mail here">
+                    </div>
+                    <div class="btnGetDeals col-12 mt-2 d-flex justify-content-center">
+                        <button class="bookNowBtn col-lg-5 col-3 rounded">
+                            <h4 class="pt-3 pb-2 text-white">Get Deals</h4>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Links Section -->
+
+
+
+    <!-- Footer -->
+    <footer class="d-flex col-12 flex-wrap justify-content-between align-items-center bg-dark pt-lg-2 pt-3">
+        <p class="copyRightsSection col-lg-4 col-12 text-center text-muted">
+            copyrights &copy; <b class="text-white">Adantrip</b>. All rights reserved.
+        </p>
+        <div class="iconsSection col-lg-3 col-12 d-flex">
+            <ul class="socialsIcons list-unstyled d-flex justify-content-evenly col-6 mx-auto">
+                <li><a href=""></a><i class="fab fa-facebook-f text-muted"></i></li>
+                <li><a href=""></a><i class="fab fa-google text-muted"></i></li>
+                <li><a href=""><i class="fab fa-twitter text-muted"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube text-muted"></i></a></li>
+                <li><a href=""></a><i class="fab fa-instagram text-muted"></i></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- END Footer Section -->
+</body>
+
+</html>

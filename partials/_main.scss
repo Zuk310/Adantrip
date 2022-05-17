@@ -1,0 +1,19 @@
+@import '../Adantrip/partials/variables';
+
+.bookNowBtn {
+    background-color: $btnColor;
+    border: none;
+}
+
+.lorem {
+    font-size: $smallText;
+    font-weight: $smallTextWeight;
+}
+
+.links {
+    ul {
+        .link-item {
+            font-size: $smallText;
+        }
+    }
+}
